@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-s6%_#(i*=383@u-ro&ch4-nzz7!_fj+1(ptms(xki*ecdp(x_p
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://mywebsite-blank-production-7652.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://mywebsite-blank-production-7652.up.railway.app','http://mywebsite-blank-production-7652.up.railway.app/iris/']
 
 # Application definition
 
