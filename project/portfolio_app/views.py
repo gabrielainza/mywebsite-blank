@@ -65,8 +65,8 @@ def casa(request):
         x_new = np.array([lista_casa])
         y_pred = float(loaded_model_regression.predict(x_new))   
         
-        pred_label = f"(y_pred:.2f)"
-        
+        pred_label = f" {y_pred:.2f}"
+
     template = 'portfolio_app/casa.html'
     context = {'pred_label': pred_label}
     
