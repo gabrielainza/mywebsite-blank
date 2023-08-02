@@ -66,7 +66,7 @@ def casa(request):
         y_pred = float(loaded_model_regression.predict(x_new))   
         
         pred_label = y_pred
-        
+
     template = 'portfolio_app/casa.html'
     context = {'pred_label': pred_label}
     
