@@ -46,7 +46,7 @@
     <div class="row">
         <div class="col-1"></div>
         <div class="col-10 my-4">
-            <h1 class="text-center">Modelo para estimar el precio de Casas </h1>
+            <h1 class="text-center">House Market Price Model </h1>
         </div>
         <div class="col-1"></div>
     </div>     
@@ -71,35 +71,35 @@
                         <!-- Campo 1: Calidad general del 1 al 10 (OverallQual) -->
                         <div class="form-floating mb-3">
                             <input type="number" name="OverallQual" class="form-control" id="OverallQual" step="1" placeholder="8" value="" min="1" max="10">
-                            <label for="OverallQual">Calidad general (1 al 10) (ej. 8)</label>  
+                            <label for="OverallQual">Overall Quality (1 al 10) (ex. 8)</label>  
                         </div>
 
                         <!-- Campo 2: Superficie habitable (GrLivArea) -->
                         <div class="form-floating mb-3">
                             <input type="number" name="GrLivArea" class="form-control" id="GrLivArea" step="1" placeholder="1660" value="">
-                            <label for="GrLivArea">Superficie habitable (ej. 1660)</label> 
+                            <label for="GrLivArea">Ground Living Area (ex. 1660)</label> 
                         </div>
 
                         <!-- Campo 3: Área en pies cuadrados del 1er piso (1stFlrSF) -->
                         <div class="form-floating mb-3">
                             <input type="number" name="1stFlrSF" class="form-control" id="1stFlrSF" step="1" placeholder="1500" value="">
-                            <label for="1stFlrSF">Área 1er piso en pies^3 (ej. 1500)</label> 
+                            <label for="1stFlrSF">First Floor SQ FT (ex. 1500)</label> 
                         </div>
 
                         <!-- Campo 4: Número de baños (FullBath) -->
                         <div class="form-floating mb-3">
                             <input type="number" name="FullBath" class="form-control" id="FullBath" step="1" placeholder="2" value="">
-                            <label for="FullBath">Número de baños (ej. 2)</label> 
+                            <label for="FullBath">Full Bath (ex. 2)</label> 
                         </div>
 
                         <!-- Campo 5: Año de construcción (YearBuilt) -->
                         <div class="form-floating mb-3">
                             <input type="number" name="YearBuilt" class="form-control" id="YearBuilt" step="1" placeholder="2006" value="">
-                            <label for="YearBuilt">Año de construcción (ej. 2006)</label> 
+                            <label for="YearBuilt">YearBuilt (ex. 2006)</label> 
                         </div>
 
                         <!-- Botón submit -->
-                        <button type="submit" class="btn btn-info text-center w-100">Estimar</button>
+                        <button type="submit" class="btn btn-info text-center w-100">Estimate</button>
                     </form>
                 </div>
             </div>
@@ -117,7 +117,7 @@
         <div class="row text-center mt-5">
             <div class="col-3"></div>
             <div class="col-6">
-                <h4>El precio estimado es:</h4>
+                <h4>The estimated price of your house is:</h4>
                 <br>
                 <div class="alert alert-info" role="alert">
                     <h4>{{ pred_label }}</h4>
