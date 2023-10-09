@@ -80,7 +80,7 @@ def casa(request):
 # Descargar CV
 def descargar_cv_ingles(request):
     # Obtiene la ruta completa al archivo PDF
-    file_path = file_path = os.path.join(project/portfolio_app/templates, 'archivos_pdf', 'GA_CV.ENG.pdf')
+    file_path = file_path = os.path.join('GA_CV.ENG.pdf')
 
 
     if os.path.exists(file_path):
