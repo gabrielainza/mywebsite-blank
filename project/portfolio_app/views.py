@@ -1,6 +1,11 @@
 from django.shortcuts import render
 import pickle
 import numpy as np
+from django.http import HttpResponse
+from django.shortcuts import render
+from django.conf import settings
+import os
+
 
 # Cargar modelo guardado
 filename = 'static/classification_svc_sklearn_1_2_2.pickle'
@@ -71,3 +76,22 @@ def casa(request):
     context = {'pred_label': pred_label}
     
     return render(request, template, context)
+
+def descargar_cv_ingles(request):
+    # Obtiene la ruta completa al archivo PDF
+    file_path = os.path.join(settings.MEDIA_ROOT, 'GA_CV.ENG.pdf')
+
+    if os.path.exists(file_path):
+        with open(file_path, 'rb') as pdf_file:
+            response = HttpResponse(pdf_file.read(), content_type='application/pdf')
+            response['Content-Disposition'] = 'attachment; filename="GA_CV.ENG.pdf"'
+            return response
+
+    # Si el archivo no existe, puedes manejarlo como desees, por ejemplo, mostrando un mensaje de error.
+    return HttpResponse("El archivo no se encuentra disponible.", status=404)
+
+
+
+
+
+
