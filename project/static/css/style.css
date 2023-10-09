@@ -150,6 +150,30 @@ background-color: transparent;
 text-decoration: underline;
 }
 
+/* Estilo de Boton de Descarga */
+.container{
+        width: 100;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.btn-descarga{
+        display: block;
+        width: 80px;
+        height: 80px;
+        background: #fff;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 80px;
+        font-size: 30px;
+        color: #495057;
+        transition: all 400ms ease-out;
+
+}
+.btn-descarga:hover{
+        transform: scale(1.1);
+}
 
 /* Estilo botones */
 button {
