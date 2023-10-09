@@ -149,8 +149,8 @@ color: #17a2b8;
 background-color: transparent;
 text-decoration: underline;
 }
-
-/* Estilo de Boton de Descarga */
+/* 
+/* Estilo de Boton de Descarga 
 .container{
         width: 100;
         height: 100vh;
@@ -173,7 +173,7 @@ text-decoration: underline;
 }
 .btn-descarga:hover{
         transform: scale(1.1);
-}
+} */
 
 /* Estilo botones */
 button {
