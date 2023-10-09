@@ -65,7 +65,8 @@ border-color: rgba(0,0,0,.125);
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     }
 
-/* 
+
+    /* aaqi */
 .nav-tabs {
 border-bottom: 1px solid #ddd;
 }
@@ -105,7 +106,7 @@ border-style: solid;
 margin-top: -1px;
 border-top-left-radius: 0;
 border-top-right-radius: 0;
-} */
+ }  /* de aqui  */
 
 
 /* Texto */
@@ -149,31 +150,6 @@ color: #17a2b8;
 background-color: transparent;
 text-decoration: underline;
 }
-/* 
-/* Estilo de Boton de Descarga 
-.container{
-        width: 100;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-}
-.btn-descarga{
-        display: block;
-        width: 80px;
-        height: 80px;
-        background: #fff;
-        border-radius: 50px;
-        text-align: center;
-        line-height: 80px;
-        font-size: 30px;
-        color: #495057;
-        transition: all 400ms ease-out;
-
-}
-.btn-descarga:hover{
-        transform: scale(1.1);
-} */
 
 /* Estilo botones */
 button {
