@@ -79,7 +79,7 @@ def casa(request):
 
 # Descargar CV
 def descargar_cv(request):
-    file_path = os.path.join(settings.MEDIA_ROOT, 'media', 'GA_CV.ENG.pdf')
+    file_path = os.path.join(settings.MEDIA_ROOT,'media' 'archivos_pdf', 'GA_CV.ENG.pdf')
     if os.path.exists(file_path):
         with open(file_path, 'rb') as pdf_file:
             response = HttpResponse(pdf_file.read(), content_type='application/pdf')
@@ -87,6 +87,5 @@ def descargar_cv(request):
             return response
     else:
         return HttpResponse("El archivo no se encuentra disponible.", status=404)
-
 
 
