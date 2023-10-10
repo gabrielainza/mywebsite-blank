@@ -79,13 +79,16 @@ def casa(request):
 
 # Descargar CV
 def descargar_cv(request):
-    file_path = os.path.join(settings.MEDIA_ROOT,'media' 'archivos_pdf', 'GA_CV.ENG.pdf')
+    # Obtén la ruta completa al archivo PDF
+    file_path = os.path.join(settings.STATIC_ROOT, 'GA_CV.ENG.pdf')
+
     if os.path.exists(file_path):
         with open(file_path, 'rb') as pdf_file:
             response = HttpResponse(pdf_file.read(), content_type='application/pdf')
             response['Content-Disposition'] = 'attachment; filename="download_cv.pdf"'
             return response
-    else:
-        return HttpResponse("El archivo no se encuentra disponible.", status=404)
+
+    # Si el archivo no existe, puedes manejarlo como desees, por ejemplo, mostrar un mensaje de error.
+    return HttpResponse("El archivo no se encuentra disponible.", status=404)
 
 
